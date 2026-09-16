@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { withBasePath } from "@/lib/basePath";
 
 // Each section owns its own full-bleed video background instead of sharing
 // one crossfading layer (that caused messy blur bleed-through). Each section
@@ -112,7 +111,7 @@ export default function VideoBackground({
     >
       <video
         ref={videoRef}
-        src={withBasePath(src)}
+        src={src}
         autoPlay={!scrollScrub}
         muted
         loop={!scrollScrub}

@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import VideoBackground from "@/components/VideoBackground";
-import { withBasePath } from "@/lib/basePath";
 import {
   SOCIALS,
   YOUTUBE_SUBSCRIBERS,
@@ -171,7 +170,7 @@ export default function AboutSection({
           className="relative h-[42svh] md:h-[50svh] aspect-[4/5] rounded-3xl overflow-hidden order-2 md:order-1 justify-self-center border border-white/30 shadow-[0_12px_32px_rgba(0,0,0,0.18)]"
         >
           <Image
-            src={withBasePath("/assets/gallery/thorong-la-pass.jpg")}
+            src="/assets/gallery/thorong-la-pass.jpg"
             alt="Dinesh A Pathum at Thorong La Pass, 5,416m, Annapurna Circuit, Nepal"
             fill
             className="object-cover"

@@ -186,3 +186,34 @@ reveal-animation work and flags `AboutSection` for an optional precautionary mob
 
 Audit complete. Two known instances of this bug class fixed prior to this entry, zero further
 High-severity instances found, rule of thumb documented for future work.
+
+---
+
+## ADR-004: Move DAP hosting from GitHub Pages to Vercel
+
+**Date:** 2026-09-16
+
+**Decision:** Host DAP on Vercel instead of GitHub Pages. Removed the GitHub Pages-specific
+`basePath`/`assetPrefix` logic in `next.config.ts` and its mirror in `lib/basePath.ts` (deleted),
+updated every call site (`app/layout.tsx`, `app/robots.ts`, `app/sitemap.ts`,
+`components/AboutSection.tsx`, `components/VideoBackground.tsx`, `components/HeroSection.tsx`,
+`components/JourneysSection.tsx`) to plain root-relative paths, and deleted the root-level
+`nextjs.yml` (confirmed it was never actually wired up as a GitHub Actions workflow, since it
+sat outside `.github/workflows/`).
+
+**Reason:** The owner asked to host DAP on Vercel. Vercel serves a site from its own domain
+root (the assigned `*.vercel.app` URL, or a custom domain), unlike GitHub's project-page URLs
+(`<user>.github.io/<repo>`), which needed the `/dinesh-a-pathum` prefix on every asset,
+canonical URL, and sitemap entry. Keeping that prefix logic after the hosting move would 404
+every asset. `output: "export"` and `images.unoptimized: true` are unchanged: the site has no
+server-only routes (Travel Tips are fetched client-side, see
+`docs/architecture/travel-tips-backend.md`), so a static export still fits.
+
+**Impact:** `lib/seo.ts`'s `SITE_URL` updated to the real Vercel project domain
+(`dap-sand.vercel.app`; update again if a custom domain is attached). `README.md` and
+`docs/deployment/deployment.md` updated to describe the Vercel deploy procedure.
+`docs/architecture/travel-tips-backend.md` updated to stop describing DAP as GitHub
+Pages-hosted. Verified locally: `npm run type-check` and `npm run build` both pass from a clean
+state.
+
+Approved and implemented.

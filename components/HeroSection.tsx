@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import GlassButton from "@/components/GlassButton";
-import { withBasePath } from "@/lib/basePath";
 
 export default function HeroSection() {
   return (
@@ -26,9 +25,9 @@ export default function HeroSection() {
             unreadable fragments. Swap in a portrait-cropped hero-mobile.jpg
             whenever one's ready, this <picture> already routes phones to it. */}
         <picture>
-          <source media="(max-width: 767px)" srcSet={withBasePath("/assets/hero-mobile.jpg")} />
+          <source media="(max-width: 767px)" srcSet="/assets/hero-mobile.jpg" />
           <img
-            src={withBasePath("/assets/hero.jpg")}
+            src="/assets/hero.jpg"
             alt="Dinesh A Pathum in the Everest region, Nepal. Those who protect nature are protected by nature."
             fetchPriority="high"
             loading="eager"

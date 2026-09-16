@@ -1,6 +1,6 @@
 # Dinesh A Pathum Portfolio Website
 
-Next.js (App Router) + TypeScript + Tailwind CSS, statically exported for GitHub Pages.
+Next.js (App Router) + TypeScript + Tailwind CSS, statically exported and hosted on Vercel.
 
 ## Development
 
@@ -24,4 +24,15 @@ npm run dev
 
 ## Deploy
 
-Push to GitHub and enable Pages (GitHub Actions source). `nextjs.yml` builds and deploys `out/` automatically on push to `main`. Update the `basePath` in `next.config.ts` to match your actual repo name if it differs from `dinesh-a-pathum`.
+Hosted on Vercel, imported from this GitHub repo (`fortechzpvt/DAP`). Vercel auto-detects the
+Next.js static export (`output: "export"` in `next.config.ts`) and serves the built `out/`
+directory; no build command overrides are needed. Every push to `main` redeploys to
+production, and every PR gets its own preview deployment automatically.
+
+`NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` must be set in Vercel Project
+Settings -> Environment Variables (all environments) before the build succeeds, otherwise the
+build fails prerendering pages that read Supabase. See `docs/deployment/deployment.md` for the
+full procedure and `docs/architecture/travel-tips-backend.md` for the shared Supabase setup.
+
+`SITE_URL` in `lib/seo.ts` should match the project's real Vercel domain (currently
+`dap-sand.vercel.app`; update it if a custom domain is attached later).

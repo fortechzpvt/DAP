@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/seo";
-import { withBasePath } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -24,17 +23,17 @@ export const metadata: Metadata = {
   creator: "Dinesh A Pathum",
   publisher: "Dinesh A Pathum",
   alternates: {
-    canonical: withBasePath("/"),
+    canonical: "/",
   },
   openGraph: {
     title: "Dinesh A Pathum | Travel & Trekking Videos",
     description:
       "Sri Lankan travel and trekking creator documenting journeys across the Himalayas and Sri Lanka's hill country.",
-    url: withBasePath("/"),
+    url: "/",
     siteName: SITE_NAME,
     images: [
       {
-        url: withBasePath(OG_IMAGE),
+        url: OG_IMAGE,
         width: 1440,
         height: 810,
         alt: "Dinesh A Pathum on a trek in the Everest region, Nepal",
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
     title: "Dinesh A Pathum | Travel & Trekking Videos",
     description:
       "Sri Lankan travel and trekking creator documenting journeys across the Himalayas and Sri Lanka's hill country.",
-    images: [withBasePath(OG_IMAGE)],
+    images: [OG_IMAGE],
   },
   robots: { index: true, follow: true },
 };

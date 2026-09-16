@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { journeys } from "@/lib/journeys";
 import VideoBackground from "@/components/VideoBackground";
 import { BirdsOverlay, RevealCard } from "@/components/BirdsReveal";
-import { withBasePath } from "@/lib/basePath";
 
 export default function JourneysSection({
   limit,
@@ -60,7 +59,7 @@ export default function JourneysSection({
                 />
               )}
               <Image
-                src={withBasePath(journey.image)}
+                src={journey.image}
                 alt={journey.title}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

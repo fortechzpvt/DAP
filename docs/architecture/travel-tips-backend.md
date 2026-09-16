@@ -6,13 +6,13 @@ Travel tips content now lives in Supabase instead of the static
 `lib/travelTips.json` file. The owner-facing authoring page is not part of
 this site. It lives in a separate standalone project, `travel-tips-admin`
 (sibling directory, own git repo, deployed on Vercel independently of this
-site's GitHub Pages hosting). This repo only ever *reads* from Supabase.
+site's own Vercel project). This repo only ever *reads* from Supabase.
 
 ## Reason
 
-The site (`dinesh-a-pathum`) is deployed as a fully static export to GitHub
-Pages (`output: "export"` in `next.config.ts`, built by `nextjs.yml`), so
-there's no server at runtime. The owner needs to log in with a password,
+The site (`dinesh-a-pathum`) is deployed as a fully static export
+(`output: "export"` in `next.config.ts`, hosted on Vercel), so there's no
+server at runtime. The owner needs to log in with a password,
 write tips under a topic, and have them show up live on the public site
 right away, without a commit/rebuild/redeploy cycle every time.
 
@@ -32,7 +32,7 @@ read surface and the owner's write surface, rather than relying on
 - `/admin/travel-tips` route inside this site. Tried first, then dropped
   once the owner asked for a separately hosted page.
 - A Node/Express server or Next.js server runtime on this site. Rejected;
-  that would mean moving off GitHub Pages just to get a database and auth
+  that would mean moving off static export just to get a database and auth
   that a BaaS already provides for free.
 - Fully normalized schema (`trips` / `tip_categories` / `tip_items` tables
   with foreign keys). Rejected in favor of one `travel_tips` row per trip
@@ -64,8 +64,8 @@ standard mode for static/client-heavy apps).
 
 The Supabase `anon` key is intentionally public in both projects. It ships
 in each project's client JS bundle at build time
-(`NEXT_PUBLIC_SUPABASE_ANON_KEY`, set in `nextjs.yml` here and in Vercel's
-project env vars for `travel-tips-admin`). That's the documented, expected
+(`NEXT_PUBLIC_SUPABASE_ANON_KEY`, set in this repo's Vercel project env vars
+and in `travel-tips-admin`'s). That's the documented, expected
 way to use Supabase from a browser. It is not a secret and should never be
 confused with the Supabase service role key, which isn't used in either
 project.
@@ -110,11 +110,10 @@ real HTTP headers); `travel-tips-admin`'s lives in `next.config.ts`'s
 1. Create a project at supabase.com.
 2. Project Settings -> API: copy the Project URL and anon public key. Set
    them in both places that need them:
-   - This repo: `.env.local` (dev) and this repo's GitHub Settings ->
-     Secrets and variables -> Actions -> Variables, as
-     `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` (used by
-     `nextjs.yml` at build time).
-   - `travel-tips-admin`: `.env.local` (dev) and its Vercel project's
+   - This repo: `.env.local` (dev) and this repo's Vercel project's
+     Environment Variables, as `NEXT_PUBLIC_SUPABASE_URL` /
+     `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
+   - `travel-tips-admin`: `.env.local` (dev) and its own Vercel project's
      Environment Variables, same two names.
 3. SQL Editor (in Supabase, once, not per project): run this repo's
    `supabase/setup.sql` to create the tables, RLS policies, and seed the
