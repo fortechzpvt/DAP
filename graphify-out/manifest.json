@@ -1,0 +1,356 @@
+{
+  "app/about/page.tsx": {
+    "mtime": 1787329685.216659,
+    "seen": 1787345960.0655282,
+    "ast_hash": "a327c82778a536a372b8c51950a2caa1",
+    "semantic_hash": "a327c82778a536a372b8c51950a2caa1"
+  },
+  "app/contact/page.tsx": {
+    "mtime": 1787407433.3557644,
+    "seen": 1787409453.85432,
+    "ast_hash": "e9c4c82252b5a86ffa8f63de746c2d4d",
+    "semantic_hash": "e9c4c82252b5a86ffa8f63de746c2d4d"
+  },
+  "app/journeys/page.tsx": {
+    "mtime": 1787329689.3263206,
+    "seen": 1787345960.065532,
+    "ast_hash": "84d733cd20e1d2c2094c7328568e009a",
+    "semantic_hash": "84d733cd20e1d2c2094c7328568e009a"
+  },
+  "app/layout.tsx": {
+    "mtime": 1787342665.0695922,
+    "seen": 1787345960.065533,
+    "ast_hash": "eae431379304cfca622aa87458483916",
+    "semantic_hash": "eae431379304cfca622aa87458483916"
+  },
+  "app/page.tsx": {
+    "mtime": 1787379635.260881,
+    "seen": 1787409453.854323,
+    "ast_hash": "7e64b949688df60324f4f78bff2d3eba",
+    "semantic_hash": "7e64b949688df60324f4f78bff2d3eba"
+  },
+  "app/robots.ts": {
+    "mtime": 1787329757.661309,
+    "seen": 1787345960.0655339,
+    "ast_hash": "2f35ede0ffa07df43977ec8c79ee4b1d",
+    "semantic_hash": "2f35ede0ffa07df43977ec8c79ee4b1d"
+  },
+  "app/sitemap.ts": {
+    "mtime": 1787377819.8451107,
+    "seen": 1787409453.8543239,
+    "ast_hash": "05ff28176cd1387ab0ce358aaaa2599d",
+    "semantic_hash": "05ff28176cd1387ab0ce358aaaa2599d"
+  },
+  "components/AboutSection.tsx": {
+    "mtime": 1787382032.837475,
+    "seen": 1787409453.854326,
+    "ast_hash": "22eb55a1543187bc33aa5cfd5c96c322",
+    "semantic_hash": "22eb55a1543187bc33aa5cfd5c96c322"
+  },
+  "components/ContactSection.tsx": {
+    "mtime": 1787408258.9747515,
+    "seen": 1787409453.854327,
+    "ast_hash": "1ef9102b8f00e49f6499219e5c3c30ea",
+    "semantic_hash": "1ef9102b8f00e49f6499219e5c3c30ea"
+  },
+  "components/GlassButton.tsx": {
+    "mtime": 1787341369.870903,
+    "seen": 1787345960.065536,
+    "ast_hash": "55d2b31b056a61aac9d04fc21d5de5c5",
+    "semantic_hash": "55d2b31b056a61aac9d04fc21d5de5c5"
+  },
+  "components/Header.tsx": {
+    "mtime": 1787408284.8346334,
+    "seen": 1787409453.8543282,
+    "ast_hash": "db786dccbcf6ce251637194258dbeefc",
+    "semantic_hash": "db786dccbcf6ce251637194258dbeefc"
+  },
+  "components/HeroSection.tsx": {
+    "mtime": 1787379574.594853,
+    "seen": 1787409453.854329,
+    "ast_hash": "4a0358da71ecd7a77428268d23e16d5c",
+    "semantic_hash": "4a0358da71ecd7a77428268d23e16d5c"
+  },
+  "components/JourneysSection.tsx": {
+    "mtime": 1787408681.4588845,
+    "seen": 1787409453.854329,
+    "ast_hash": "600e4763f8641c393dd9432f9929d07c",
+    "semantic_hash": "600e4763f8641c393dd9432f9929d07c"
+  },
+  "components/SiteFooter.tsx": {
+    "mtime": 1787342151.5966082,
+    "seen": 1787345960.0655391,
+    "ast_hash": "39ec489fc10f2d9e5cb683354e09b99e",
+    "semantic_hash": "39ec489fc10f2d9e5cb683354e09b99e"
+  },
+  "components/SocialFloat.tsx": {
+    "mtime": 1787341415.093344,
+    "seen": 1787345960.0655391,
+    "ast_hash": "44f7b411163cfdcdad42f03a8fe37181",
+    "semantic_hash": "44f7b411163cfdcdad42f03a8fe37181"
+  },
+  "components/VideoBackground.tsx": {
+    "mtime": 1787409007.0031075,
+    "seen": 1787409453.854332,
+    "ast_hash": "958be402dbe07e1fba033926ffa1731b",
+    "semantic_hash": "958be402dbe07e1fba033926ffa1731b"
+  },
+  "components/VideoSection.tsx": {
+    "mtime": 1787408699.8896577,
+    "seen": 1787409453.854332,
+    "ast_hash": "4d1858ddbf7279534efb2eb3e3936bc3",
+    "semantic_hash": "4d1858ddbf7279534efb2eb3e3936bc3"
+  },
+  "lib/basePath.ts": {
+    "mtime": 1787329433.1933095,
+    "seen": 1787345960.06554,
+    "ast_hash": "36da812886c6cd1c775284806b2bfa15",
+    "semantic_hash": "36da812886c6cd1c775284806b2bfa15"
+  },
+  "lib/journeys.ts": {
+    "mtime": 1787406123.5262783,
+    "seen": 1787409453.854333,
+    "ast_hash": "a98ed0cabfdf9cb0803b7cc2501f24f1",
+    "semantic_hash": "a98ed0cabfdf9cb0803b7cc2501f24f1"
+  },
+  "lib/seo.ts": {
+    "mtime": 1787329440.7916393,
+    "seen": 1787345960.065541,
+    "ast_hash": "4297244c4b73d8f9e1359a6a0d9ebccb",
+    "semantic_hash": "4297244c4b73d8f9e1359a6a0d9ebccb"
+  },
+  "lib/socials.ts": {
+    "mtime": 1787379182.2350116,
+    "seen": 1787409453.854335,
+    "ast_hash": "78c6fe5687920ca47f60d721b8e0ab39",
+    "semantic_hash": "78c6fe5687920ca47f60d721b8e0ab39"
+  },
+  "next-env.d.ts": {
+    "mtime": 1787345240.6526625,
+    "seen": 1787345960.065543,
+    "ast_hash": "aa94238a90e7d04b7a47ecc3145ba6a0",
+    "semantic_hash": "aa94238a90e7d04b7a47ecc3145ba6a0"
+  },
+  "next.config.ts": {
+    "mtime": 1787329396.8878615,
+    "seen": 1787345960.065543,
+    "ast_hash": "df4502c1e99088704612733dbf96d4fd",
+    "semantic_hash": "df4502c1e99088704612733dbf96d4fd"
+  },
+  "package.json": {
+    "mtime": 1787329390.0369995,
+    "seen": 1787345960.065544,
+    "ast_hash": "1d709bd116cfed4bd35349ef3f135d81",
+    "semantic_hash": "1d709bd116cfed4bd35349ef3f135d81"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1787329406.5975893,
+    "seen": 1787345960.065544,
+    "ast_hash": "d3fd1d29b05a09ff76b595a70e1e7d50",
+    "semantic_hash": "d3fd1d29b05a09ff76b595a70e1e7d50"
+  },
+  "tailwind.config.ts": {
+    "mtime": 1787341678.685016,
+    "seen": 1787345960.0655448,
+    "ast_hash": "cc6254215a80d0597901afb15cbc2d0c",
+    "semantic_hash": "cc6254215a80d0597901afb15cbc2d0c"
+  },
+  "tsconfig.json": {
+    "mtime": 1787329749.1529248,
+    "seen": 1787345960.0655448,
+    "ast_hash": "7831df54b0184c9a88a681bd02b3e9e4",
+    "semantic_hash": "7831df54b0184c9a88a681bd02b3e9e4"
+  },
+  "AGENTS.md": {
+    "mtime": 1787329778.5944312,
+    "seen": 1787345960.0655448,
+    "ast_hash": "01e8142356e15c3404e0d84c48187cd0",
+    "semantic_hash": "01e8142356e15c3404e0d84c48187cd0"
+  },
+  "CLAUDE.md": {
+    "mtime": 1787329778.5945237,
+    "seen": 1787345960.065546,
+    "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
+    "semantic_hash": "5c27369b226fcf2be8a6cfe52224e767"
+  },
+  "README.md": {
+    "mtime": 1787343597.3838053,
+    "seen": 1787345960.065546,
+    "ast_hash": "af5ed9569082a82b0676bc10775d6a58",
+    "semantic_hash": "af5ed9569082a82b0676bc10775d6a58"
+  },
+  "nextjs.yml": {
+    "mtime": 1787329426.3233314,
+    "seen": 1787345960.065547,
+    "ast_hash": "4f197c1d9f39a409b37b5a1f2e000c7d",
+    "semantic_hash": "4f197c1d9f39a409b37b5a1f2e000c7d"
+  },
+  "assets/_source_originals/481473164_18321851980162787_5299946186378211450_n.jpg": {
+    "mtime": 1787312376.0133033,
+    "seen": 1787345960.065547,
+    "ast_hash": "c595d620e8a4afdcd46c15edc369a62d",
+    "semantic_hash": "c595d620e8a4afdcd46c15edc369a62d"
+  },
+  "assets/_source_originals/657738546_18368912020162787_3306447963049543570_n.jpg": {
+    "mtime": 1787312408.695485,
+    "seen": 1787345960.065548,
+    "ast_hash": "3f028ce4098a129af35ce567bf84052e",
+    "semantic_hash": "3f028ce4098a129af35ce567bf84052e"
+  },
+  "assets/_source_originals/ChatGPT Image Aug 21, 2026, 10_18_26 PM.png": {
+    "mtime": 1787330906.423677,
+    "seen": 1787345960.065548,
+    "ast_hash": "4aa4df77bacdd2b850a586d2cf45c199",
+    "semantic_hash": "4aa4df77bacdd2b850a586d2cf45c199"
+  },
+  "assets/_source_originals/nature_mountain_image_1920x1080.png": {
+    "mtime": 1787340581.7767065,
+    "seen": 1787345960.0655491,
+    "ast_hash": "36b55dadc5da3f6e48ca8bda27a6a12c",
+    "semantic_hash": "36b55dadc5da3f6e48ca8bda27a6a12c"
+  },
+  "assets/_source_originals/new-hero-poster.png": {
+    "mtime": 1787331085.9903393,
+    "seen": 1787345960.0655491,
+    "ast_hash": "4aa4df77bacdd2b850a586d2cf45c199",
+    "semantic_hash": "4aa4df77bacdd2b850a586d2cf45c199"
+  },
+  "public/assets/gallery/sri-lanka-hills.jpg": {
+    "mtime": 1787329384.5374124,
+    "seen": 1787345960.06555,
+    "ast_hash": "3f028ce4098a129af35ce567bf84052e",
+    "semantic_hash": "3f028ce4098a129af35ce567bf84052e"
+  },
+  "public/assets/gallery/thorong-la-pass.jpg": {
+    "mtime": 1787329384.5324097,
+    "seen": 1787345960.06555,
+    "ast_hash": "c595d620e8a4afdcd46c15edc369a62d",
+    "semantic_hash": "c595d620e8a4afdcd46c15edc369a62d"
+  },
+  "public/assets/hero.jpg": {
+    "mtime": 1787340651.4433098,
+    "seen": 1787345960.065551,
+    "ast_hash": "f4583cd4816cf2058de39276d5dccc43",
+    "semantic_hash": "f4583cd4816cf2058de39276d5dccc43"
+  },
+  "assets/_source_originals/Screen Recording 2026-08-21 at 17.19.07.mp4": {
+    "mtime": 1787313429.5978346,
+    "seen": 1787345960.065551,
+    "ast_hash": "f5124371000a0ca90b65b8801abe05aa",
+    "semantic_hash": "f5124371000a0ca90b65b8801abe05aa"
+  },
+  "assets/_source_originals/Screen Recording 2026-08-21 at 17.19.07_1.mp4": {
+    "mtime": 1787313522.1164708,
+    "seen": 1787345960.0655518,
+    "ast_hash": "814258a57905a1e215681377e1bc6218",
+    "semantic_hash": "814258a57905a1e215681377e1bc6218"
+  },
+  "assets/_source_originals/Screen Recording 2026-08-21 at 17.19.07_2.mp4": {
+    "mtime": 1787313634.1558802,
+    "seen": 1787345960.065553,
+    "ast_hash": "e5490a1c5975ec7499922f305c713e48",
+    "semantic_hash": "e5490a1c5975ec7499922f305c713e48"
+  },
+  "assets/_source_originals/Screen Recording 2026-08-21 at 17.19.07_3.mp4": {
+    "mtime": 1787313761.9745154,
+    "seen": 1787345960.065553,
+    "ast_hash": "6ead146b689019c3adf5ced286b2b526",
+    "semantic_hash": "6ead146b689019c3adf5ced286b2b526"
+  },
+  "assets/_source_originals/Screen Recording 2026-08-21 at 17.19.07_4.mp4": {
+    "mtime": 1787313822.5368636,
+    "seen": 1787345960.065554,
+    "ast_hash": "5c7cf10ff9202de1c72e9426eb3d5937",
+    "semantic_hash": "5c7cf10ff9202de1c72e9426eb3d5937"
+  },
+  "assets/_source_originals/Screen Recording 2026-08-22 at 01.56.17.mov": {
+    "mtime": 1787344001.9914734,
+    "seen": 1787345960.065554,
+    "ast_hash": "cfb295a0f71c793dc573df3037289f15",
+    "semantic_hash": "cfb295a0f71c793dc573df3037289f15"
+  },
+  "public/assets/clip-1.mp4": {
+    "mtime": 1787329384.542276,
+    "seen": 1787345960.0655549,
+    "ast_hash": "e5490a1c5975ec7499922f305c713e48",
+    "semantic_hash": "e5490a1c5975ec7499922f305c713e48"
+  },
+  "public/assets/clip-2.mp4": {
+    "mtime": 1787329384.5488355,
+    "seen": 1787345960.0655549,
+    "ast_hash": "6ead146b689019c3adf5ced286b2b526",
+    "semantic_hash": "6ead146b689019c3adf5ced286b2b526"
+  },
+  "public/assets/clip-3.mp4": {
+    "mtime": 1787343484.4103796,
+    "seen": 1787345960.0655549,
+    "ast_hash": "73edf9f4177768f6d0142b9001abfecb",
+    "semantic_hash": "73edf9f4177768f6d0142b9001abfecb"
+  },
+  "public/assets/clip-4.mp4": {
+    "mtime": 1787343487.0961268,
+    "seen": 1787345960.065556,
+    "ast_hash": "fae66a93d469a45ac800318222183e14",
+    "semantic_hash": "fae66a93d469a45ac800318222183e14"
+  },
+  "public/assets/clip-5.mp4": {
+    "mtime": 1787343489.3696578,
+    "seen": 1787345960.065557,
+    "ast_hash": "7cb97e2ad84d25725b0f57eabb2822f4",
+    "semantic_hash": "7cb97e2ad84d25725b0f57eabb2822f4"
+  },
+  "public/assets/clip-6.mp4": {
+    "mtime": 1787344070.7933629,
+    "seen": 1787345960.065557,
+    "ast_hash": "300427583804cae8aa94d3c1eea0f7a2",
+    "semantic_hash": "300427583804cae8aa94d3c1eea0f7a2"
+  },
+  "app/videos/page.tsx": {
+    "mtime": 1787377826.9430919,
+    "seen": 1787409453.854325,
+    "ast_hash": "1735e5682b6a890e2049f1af905f0cb2",
+    "semantic_hash": "1735e5682b6a890e2049f1af905f0cb2"
+  },
+  "components/BirdsReveal.tsx": {
+    "mtime": 1787408726.020194,
+    "seen": 1787409453.854326,
+    "ast_hash": "6996cd1a3bdd3c2efcf368d62638478c",
+    "semantic_hash": "6996cd1a3bdd3c2efcf368d62638478c"
+  },
+  "components/TravelTipsSection.tsx": {
+    "mtime": 1787409015.2644143,
+    "seen": 1787409453.8543308,
+    "ast_hash": "fdf67085e32d0fddc1c18bc85e9e716e",
+    "semantic_hash": "fdf67085e32d0fddc1c18bc85e9e716e"
+  },
+  "lib/travelTips.ts": {
+    "mtime": 1787407364.6785533,
+    "seen": 1787409453.854335,
+    "ast_hash": "663b12e8172e5d091908c3430c0a534b",
+    "semantic_hash": "663b12e8172e5d091908c3430c0a534b"
+  },
+  "assets/_source_originals/4000m \ud83d\udd3a \u201cI will get there, but now I\u2019m here and here is wonderful.\u201d 2025.....#lifestyle #vibe #.jpg": {
+    "mtime": 1787406073.9289958,
+    "seen": 1787409453.854342,
+    "ast_hash": "067477b6a7de5181f80f1ef13fec85a5",
+    "semantic_hash": "067477b6a7de5181f80f1ef13fec85a5"
+  },
+  "assets/_source_originals/Somewhere between the Mountains\u2026 this is what DREAMS feel like. ..\ud83c\udfd4\ufe0f\ud83c\udfcd\ufe0f\u2728.Bucket List \u2705#roadtrip.jpg": {
+    "mtime": 1787405518.624105,
+    "seen": 1787409453.854346,
+    "ast_hash": "8ecc3446b20c947fd0b37cd2dda1a541",
+    "semantic_hash": "8ecc3446b20c947fd0b37cd2dda1a541"
+  },
+  "public/assets/gallery/everest-base-camp-trek.jpg": {
+    "mtime": 1787406118.8215594,
+    "seen": 1787409453.854347,
+    "ast_hash": "067477b6a7de5181f80f1ef13fec85a5",
+    "semantic_hash": "067477b6a7de5181f80f1ef13fec85a5"
+  },
+  "public/assets/gallery/ladakh-bike-tour.jpg": {
+    "mtime": 1787405765.6865556,
+    "seen": 1787409453.854348,
+    "ast_hash": "8ecc3446b20c947fd0b37cd2dda1a541",
+    "semantic_hash": "8ecc3446b20c947fd0b37cd2dda1a541"
+  }
+}

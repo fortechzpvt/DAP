@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-rgb: 15 20 26;
+  --cream-rgb: 245 241 232;
+  --ice-rgb: 150 194 214;
+  --amber-rgb: 214 148 74;
+  --forest-rgb: 74 99 71;
+}
+
+/* No global `scroll-behavior: smooth`. It hijacks the scroll-to-top on every
+   route change: the browser tries to animate there, and if the destination
+   page is shorter than the scroll position you left off at, it clamps to the
+   new page's bottom instead of ever reaching 0. Header.tsx does the smooth
+   in-page anchor jump itself via scrollIntoView() instead, only when it's
+   actually a same-page scroll. */
+/* Only laptops/desktops (1024px+) get the full-viewport-height snap effect.
+   Below that, phones and tablets collapse each section's grid to fewer
+   columns, which can make stacked content taller than one viewport. Mixed
+   with mandatory snap and a fixed section height, that content becomes
+   permanently clipped and unreachable. Sections fall back to natural,
+   freely-scrollable height below lg (see AboutSection/JourneysSection/
+   VideoSection's "home" variant), so this media query just keeps the snap
+   behavior from fighting that on phones/tablets. */
+@media (min-width: 1024px) {
+  html.snap-page {
+    scroll-snap-type: y mandatory;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@keyframes bgSlowZoomSubtle {
+  from {
+    transform: scale(1) translateZ(0);
+  }
+  to {
+    transform: scale(1.04) translateZ(0);
+  }
+}
