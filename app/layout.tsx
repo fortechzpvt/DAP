@@ -78,9 +78,11 @@ export default function RootLayout({
           // this block only runs in production anyway.
           // connect-src allows *.supabase.co for the Travel Tips read path
           // (lib/supabaseClient.ts). Docs: docs/architecture/travel-tips-backend.md
+          // img-src allows i.ytimg.com (video thumbnails) and yt3.ggpht.com
+          // (channel avatar), both used by components/VideoSection.tsx.
           <meta
             httpEquiv="Content-Security-Policy"
-            content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://cloudflareinsights.com https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+            content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://yt3.ggpht.com; media-src 'self'; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://cloudflareinsights.com https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
           />
         )}
         <meta name="referrer" content="strict-origin-when-cross-origin" />
